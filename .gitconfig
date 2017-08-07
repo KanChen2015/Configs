@@ -1,0 +1,20 @@
+[core]
+	excludesfile = /Users/kan/.gitignore_global
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = 
+	email = kan@drchrono.com
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	lg = log
+	cm = commit
+	stash-unapply = !git stash show -p | git apply -R
